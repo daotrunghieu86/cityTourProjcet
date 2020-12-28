@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #837c7c;
+  font-family: "Open Sans", sans-serif;
+}
+
+.tour {
+  background: #ececec;
+  border-radius: 1rem;
+  margin: 4rem 1rem;
+  overflow: hidden;
+}
+
+.tour:hover .img-container .close-btn {
+  opacity: 1;
+}
+
+.tour .img-container {
+  position: relative;
+}
+
+.tour .img-container img {
+  width: 100%;
+}
+
+.tour .img-container .close-btn {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  color: #fff;
+  font-size: 30px;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.tour .info-tour {
+  padding: 1rem;
+}
+
+.tour .info-tour h3 {
+  text-transform: capitalize;
+  color: #82b340;
+  font-size: 23px;
+}
+
+.tour .info-tour h4 {
+  text-transform: capitalize;
+  margin: 0.4rem 0;
+  font-size: 20px;
+}
+
+.tour .info-tour h5 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.tour .info-tour h5 i {
+  color: #82b340;
+  margin-left: 6px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.tour .info-tour p {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 600px) {
+  .tour {
+    margin: 2rem 0rem;
+  }
+  .tour:first-child {
+    margin-top: 4rem;
+  }
+}
+/*# sourceMappingURL=Tour.css.map */

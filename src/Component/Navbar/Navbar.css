@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #837c7c;
+  font-family: "Open Sans", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #837c7c;
+}
+
+.navbar .navlinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.navbar .navlinks li {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.navbar .navlinks li .navlink {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.navbar .navlinks li .navlink:hover {
+  color: #82b340;
+}
+
+.navbar .navlinks li .active {
+  color: #82b340;
+}
+/*# sourceMappingURL=Navbar.css.map */

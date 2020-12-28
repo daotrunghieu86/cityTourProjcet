@@ -1,0 +1,22 @@
+@import "../../city-tours.scss";
+.tour-list {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 1000px) {
+  .tour-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tour-list {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

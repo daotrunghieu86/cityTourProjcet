@@ -1,0 +1,65 @@
+@import "../../city-tours.scss";
+
+.tour {
+  background: $mainGrey;
+  border-radius: 1rem;
+  margin: 4rem 1rem;
+  overflow: hidden;
+  &:hover {
+    .img-container .close-btn {
+      opacity: 1;
+    }
+  }
+  .img-container {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .close-btn {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      color: $mainWhite;
+      font-size: 30px;
+      opacity: 0;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+  }
+  .info-tour {
+    padding: 1rem;
+    h3 {
+      text-transform: capitalize;
+      color: $mainGreen;
+      font-size: 23px;
+    }
+    h4 {
+      text-transform: capitalize;
+      margin: 0.4rem 0;
+      font-size: 20px;
+    }
+    h5 {
+      font-size: 15px;
+      font-weight: 600;
+
+      i {
+        color: $mainGreen;
+        margin-left: 6px;
+        font-size: 17px;
+        cursor: pointer;
+      }
+    }
+    p {
+      transition: 0.3s;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tour {
+    margin: 2rem 0rem;
+    &:first-child {
+      margin-top: 4rem;
+    }
+  }
+}
